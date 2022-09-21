@@ -1,0 +1,46 @@
+*{
+    background-color: #FEFAE0;
+    color: #283618;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6em;
+}
+body{
+    display:block;
+}
+header{
+    display: block;
+    text-align: center;
+}
+.nav{
+width:100%;
+background-color:#606C38;
+}
+button{
+    padding: 10px;
+    margin: 10px;
+    background-color: #DDA15E;
+    color: #FEFAE0;
+    border-color: #FEFAE0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+section{
+    text-align: center;
+    margin: 20px;
+    
+    border-style: solid;
+    border-color: #283618;
+}
+h1{
+    color: #283618;
+}
+
+a:hover{
+    color: #606C38;
+}
+
+input{
+    padding: 10px;
+    margin: 5px;
+}
