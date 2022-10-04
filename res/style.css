@@ -72,3 +72,19 @@ input{
     padding: 10px;
     margin: 5px;
 }
+
+.postTextarea{
+    vertical-align: top;
+}
+
+.fileButton
+{
+    padding: 10px;
+    margin: auto;
+    background-color: #FEFAE0;
+    color: #DDA15E;
+    border-color: #DDA15E;
+    border-radius: 5px;
+    font-weight: bold;
+    vertical-align: middle
+}
