@@ -1,0 +1,61 @@
+[
+    {
+      "userId": 1,
+      "postId": 1,
+      "body":"Great holiday!",
+      "image":""
+    },
+    {
+        "userId": 1,
+      "postId": 2,
+      "body":"Happy Birthday Ella! You are gorgeous girl",
+      "image": ""
+    },
+    {
+        "userId": 2,
+        "postId": 3,
+        "body":"Miss you guys! See u in a month. :)",
+        "image": ""
+    },
+    {
+        "userId": 2,
+        "postId": 4,
+        "body":"Cathal Nolan from the Midland Weather Channel has shared footage of an unusual weather event in Offaly.",
+        "image": ""
+    },
+    {
+        "userId": 3,
+        "postId": 5,
+        "body": "Today is gonna be so hot",
+        "image": ""
+    },
+    {
+        "userId": 3,
+        "postId": 6,
+        "body":"Taylor Swift got the best songs ever!",
+        "image": ""
+    },
+    {
+        "userId": 3,
+        "postId": 7,
+        "body":"I need help with math. Anybody please?",
+        "image": ""
+    },
+    {
+        "userId": 4,
+        "postId": 8,
+        "body": "Family holidays are the worst.",
+        "image": ""
+    },
+    {
+        "userId": 4,
+        "postId": 9,
+        "body": "Look how Pete sleep afer party! :D",
+        "image": ""
+    },
+    {
+        "userId": 4,
+        "postId": 10,
+        "body":"Look at my ca! Isnt she so adorable?",
+        "image": ""
+    }]
