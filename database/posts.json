@@ -1,21 +1,21 @@
 [
     {
-      "userId": 1,
-      "postId": 1,
-      "body":"Great holiday!",
-      "image":""
+        "userId": 1,
+        "postId": 1,
+        "body":"Great holiday!",
+        "image":""
     },
     {
         "userId": 1,
-      "postId": 2,
-      "body":"Happy Birthday Ella! You are gorgeous girl",
-      "image": ""
+        "postId": 2,
+        "body":"Happy Birthday Ella! You are gorgeous girl",
+        "image": ""
     },
     {
         "userId": 2,
         "postId": 3,
         "body":"Miss you guys! See u in a month. :)",
-        "image": ""
+        "image": "media/dog.jpg"
     },
     {
         "userId": 2,
@@ -56,6 +56,6 @@
     {
         "userId": 4,
         "postId": 10,
-        "body":"Look at my ca! Isnt she so adorable?",
+        "body":"Look at my cat! Isnt she so adorable?",
         "image": ""
     }]
