@@ -8,17 +8,24 @@
 </head>
 
 <body>
-  
+
   <header>
     <ul class="nav">
       <li><a href="index.html" class="navbar">Home</a></li>
       <li><a href="login.html" class="navbar">Login</a></li>
       <li><a href="addPost.html" class="navbar">Add a post</a></li>
       <a class="navbar-brand" href="res/images/favicon.ico">
-        <div class="icon">
-          <img src="media/icon3.png">
-        </div>
       </a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          <img class = "icon" id="profile_pic" src="res/images/me.png" alt="profile picture">
+        </button>
+        <div class="dropdown-content">
+          <a href="#">John Doe</a>
+          <a href="#">john.doe@ut.ee</a>
+          <a href="login.html">Log out</a>
+          </div>
+        </div>
     </ul>
   </header>
 

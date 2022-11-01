@@ -5,30 +5,44 @@ fetch("https://api.npoint.io/acfb3ed97b0b631ba062")
     .then(json => {
         json.map(data => {
             console.log(data);
-            postsBody.append(post_fun(data));
+            postsBody.append(post_fun(data, data.image));
         })
     })
 
-function post_fun({body,image}) {
+function post_fun({body}, {image}) {
     let p = document.createElement('div');
     date = new Date().toLocaleString()
     p.innerHTML = `
     <div class="post">
         <div class="center">
-
             <div class="post_header">
                 <div class="iconPost">
-                  <img src="media/icon3.png">
+                  <img src="image">
                 </div>
                 <p>${date}</p>
               </div>
               <div class="post_body">
-                <img src="media/dog.jpg" class="post_image">
                 <p>${body}</p>
               </div>
-
             </div>
     </div>
     `
     return p;
 }
+
+function showDropdown() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+
