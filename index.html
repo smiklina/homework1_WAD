@@ -1,40 +1,64 @@
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="res/index_style.css" />
+    <title>My Dashboard</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="res/index_style.css">
-  <title>My Dashboard</title>
-</head>
+  <body>
+    <header>
+      <ul class="nav">
+        <li><a href="index.html" class="navbar">Home</a></li>
+        <li><a href="login.html" class="navbar">Login</a></li>
+        <li><a href="addPost.html" class="navbar">Add a post</a></li>
 
-<body>
-
-  <header>
-    <ul class="nav">
-      <li><a href="index.html" class="navbar">Home</a></li>
-      <li><a href="login.html" class="navbar">Login</a></li>
-      <li><a href="addPost.html" class="navbar">Add a post</a></li>
-      <a class="navbar-brand" href="res/images/favicon.ico">
-      </a>
-      <div class="dropdown">
-        <button class="dropbtn">
-          <img class = "icon" id="profile_pic" src="res/images/me.png" alt="profile picture">
-        </button>
-        <div class="dropdown-content">
-          <a href="#">John Doe</a>
-          <a href="#">john.doe@ut.ee</a>
-          <a href="login.html">Log out</a>
-          </div>
+       
+        
         </div>
-    </ul>
-  </header>
+        <a class="navbar-brand" href="res/images/favicon.ico"> </a>
+      </ul>
+      <div class="hor_spacer"></div>
+      <div style="display: flex; justify-content: flex-end; padding-right: 6.5em;">
+      <div class="dropdown">
+        <img class = "icon dropbtn" id="profile_pic" src="res/images/me.png" alt="profile picture" onclick="myFunction()">
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      </div>
+    </header>
 
-  <section id="postsBody"></section>
+    <section id="postsBody"></section>
 
-  <footer></footer>
+    <footer></footer>
 
-  <script src="js/index.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+  <style>
+    </style>
 
-</body>
-
+<script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
 </html>
