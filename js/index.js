@@ -1,6 +1,7 @@
 let posts = document.getElementById("postsBody");
 
-fetch("https://api.npoint.io/acfb3ed97b0b631ba062")
+fetch("https://api.npoint.io/504ea3d9782e5905abef")
+//fetch ("./database/posts.json")    
     .then(res => res.json())
     .then(json => {
         json.map(data => {
@@ -17,7 +18,7 @@ function post_fun({body}, {image}) {
         <div class="center">
             <div class="post_header">
                 <div class="iconPost">
-                  <img src="image">
+                  <img src=${image}>
                 </div>
                 <p>${date}</p>
               </div>
@@ -26,7 +27,7 @@ function post_fun({body}, {image}) {
               </div>
             </div>
     </div>
-    `
+    `;
     return p;
 }
 
