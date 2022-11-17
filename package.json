@@ -1,8 +1,0 @@
-{
-    "name":"homework1_WAD",
-    "main": "index.js",
-    "scripts": {
-        "start": "json-server --watch ./database/posts.json"
-    }
-    
-}
