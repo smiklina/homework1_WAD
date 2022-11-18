@@ -42,7 +42,19 @@ li {
     padding-right: 15;
 }
 
-
+button{
+    padding: 10px;
+    margin: auto;
+    background-color: #DDA15E;
+    color: #FEFAE0;
+    border: 3px solid #FEFAE0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+button:hover {
+    color: #606C38;
+    border-color: #283618;
+}
 
 li a{
     display: block;

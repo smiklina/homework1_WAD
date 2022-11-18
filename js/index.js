@@ -6,11 +6,11 @@ fetch("./database/posts.json")
   .then((json) => {
     json.map((data) => {
       console.log(data);
-      postsBody.append(post_fun(data, data));
+      postsBody.append(post_fun(data, data, data, data));
     });
   });
 
-function post_fun({ body }, { image }) {
+function post_fun({ body }, { image }, {likeNumber},{postId}) {
   let p = document.createElement("div");
   date = new Date().toLocaleString();
   p.innerHTML = `
@@ -24,6 +24,9 @@ function post_fun({ body }, { image }) {
               <div class="post_body">
                 <p>${body}</p>
                 <img src=${image} width="400px" height="300px">
+                <p>${likeNumber} Likes
+                <button onclick="${likeNumber++}">LIKE</button>
+                </p>
               </div>
             </div>
     </div>
