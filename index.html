@@ -36,34 +36,8 @@
       <button @click="resetLike()">RESET LIKES</button>
     </footer>
   </div>
+  <script src="https://unpkg.com/vue@next"></script>
     <script src="js/index.js"></script>
-    <script src="https://unpkg.com/vue@next"></script>
-    <script>
-      let app=Vue.createApp({
-        data(){
-          return{
-            posts:[],
-          }
-        },
-        methods: {
-          pressLike (post){
-            this.posts[post].likeNumber++;
-          },
-          resetLike(){
-            for (post in posts){
-              post.likeNumber=0;
-            }
-            console.log ("Htoto");
-          },
-          async mounted (){
-              res.json=await fetch("./database/posts.json");
-              const data= await res.json;
-              this.posts=data;
-              console.log (posts);
-          }
-        },
-      })
-      app.mount ('#app')
-    </script>
+    
   </body>
 </html>

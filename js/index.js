@@ -25,7 +25,7 @@ function post_fun({ body }, { image }, {likeNumber},{postId}) {
                 <p>${body}</p>
                 <img src=${image} width="400px" height="300px">
                 <p>${likeNumber} Likes
-                <button onclick="${likeNumber++}">LIKE</button>
+                <button v-on:click="like_post(${postId})">LIKE</button>
                 </p>
               </div>
             </div>
@@ -49,3 +49,37 @@ window.onclick = function (event) {
     }
   }
 };
+
+let app=Vue.createApp({
+  data(){
+    return{
+      posts:[],
+    }
+  },
+  mutations:{
+    like_post: (state, {id}) => {
+      state.postsList.forEach (post => {
+          if(post.id == id){
+              post.likes += 1
+          }
+      })
+    },
+    reset_likes: state => {
+      state.postsList.forEach (post => {
+        post.likes = 0;
+    })
+  },
+  },
+  methods: {
+    like_post(){
+      this.$posts.commit("like_post",{postId:this.id})
+    },
+    async mounted (){
+        res.json=await fetch("./database/posts.json");
+        const data= await res.json;
+        this.posts=data;
+        console.log (posts);
+    }
+  },
+})
+app.mount ('#app')
