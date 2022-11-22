@@ -173,8 +173,8 @@ input{
     height: 46px;
     border-radius: 50%;
     overflow: hidden;
-    margin-top: -4px;
-    margin-right: 10;
+    margin-top: -55px;
+    margin-right: 10px;
     float: right;
 }
 /* 
@@ -231,7 +231,7 @@ input{
   
   
   .dropdown {
-    position: relative;
+    position: fixed;
     display: inline-block;
   }
   
@@ -243,7 +243,6 @@ input{
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    margin-top: 90%;
     margin-right: 50%;
   }
   
