@@ -15,7 +15,7 @@ const store = createStore( {
       state.posts = posts
     },
     incrementLikes(state, postId) {
-      const post = this.state.post.find(post = post.id ===postId.id)
+      const post = this.state.post.find(post => post.id ===postId.id)
       post.likeNumber++
     },
     resetLikes() {

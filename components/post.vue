@@ -11,7 +11,7 @@
                 <p>${body}</p>
                 <img src=${image} width="400px" height="300px">
                 <p>Likes: {{post.likeNumber}}</p>
-                <!--button for likes-->
+                <button @click="incrementLikes()"></button>
               </div>
             </div>
     </div>
