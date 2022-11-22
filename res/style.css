@@ -67,6 +67,18 @@ section{
     border-style: solid;
     border-color: #283618;
 }
+
+section1{
+    top: -320px;
+    right: -370px;
+    width:fit-content;
+    margin: 20px auto;
+    padding: .5em;
+    text-align: justify;
+    border-style: solid;
+    border-color: #283618;
+}
+
 h1{
     color: #283618;
 }
@@ -95,4 +107,40 @@ input{
     border-radius: 5px;
     font-weight: bold;
     vertical-align: middle
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+    display:none;
+    background: #FEFAE0;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#message p {
+    font-size: 15px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+
+    content: "•  ";
+}
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+
+    content: "•  ";
 }
