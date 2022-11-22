@@ -1,3 +1,4 @@
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,16 +8,15 @@
   </head>
 
   <body>
+    <div id="app">
     <header>
       <ul class="nav">
         <li><a href="index.html" class="navbar">Home</a></li>
         <li><a href="login.html" class="navbar">Login</a></li>
         <li><a href="addPost.html" class="navbar">Add a post</a></li>
-
-       
-        
-        </div>
+      </div>
         <a class="navbar-brand" href="res/images/favicon.ico"> </a>
+      
       </ul>
       <div class="hor_spacer"></div>
       <div style="display: flex; justify-content: flex-end; padding-right: 6.5em;">
@@ -30,35 +30,14 @@
       </div>
       </div>
     </header>
-
+    
     <section id="postsBody"></section>
-
-    <footer></footer>
-
+    <footer>
+      <button @click="resetLike()">RESET LIKES</button>
+    </footer>
+  </div>
+  <script src="https://unpkg.com/vue@next"></script>
     <script src="js/index.js"></script>
+    
   </body>
-  <style>
-    </style>
-
-<script>
-  /* When the user clicks on the button, 
-  toggle between hiding and showing the dropdown content */
-  function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
-  
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }
-  </script>
 </html>
